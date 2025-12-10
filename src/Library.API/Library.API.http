@@ -1,0 +1,7 @@
+@Library_API_HostAddress = http://localhost:5291
+
+### Obtener todos los libros
+GET {{Library_API_HostAddress}}/api/books
+Accept: application/json
+
+###

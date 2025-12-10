@@ -1,0 +1,12 @@
+namespace Library.Domain.Entities;
+
+public class Book
+{
+    public int Id { get; set; }
+    public string Title { get; set; } = null!;
+    public string Author { get; set; } = null!;
+    public string ISBN { get; set; } = null!;
+    public int Stock { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public ICollection<Loan> Loans { get; set; } = new List<Loan>();
+}
